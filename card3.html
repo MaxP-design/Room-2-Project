@@ -1,0 +1,227 @@
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>It's Taf Time! > Card 1</title>
+    <style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6C767;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu h1 {
+    margin: 0;
+    color: #000000;
+}
+
+.menu .logo {
+    height: 80px;
+    margin-right: 250px;
+}
+
+.content {
+    padding-top: 120px;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box-comic {
+    padding: 10px; /* Reduce padding to minimize space */
+    margin: 10px 0;
+    padding-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    min-height: 120px; /* Adjust the minimum height */
+}
+
+.box-comic-1, .box-comic-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    min-height: 170px;
+    flex: 1;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box-comic-1 {
+    width: 40%;
+}
+
+.box-comic-2 {
+    width: 30%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+
+.box-comic-1:hover, .box-comic-2:hover {
+    transform: scale(1.05) rotate(0.5deg);  /* Play with this to adjust the box animation */
+    opacity: 0.8;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.box1 {
+    background-color: #4c4b16;
+    text-align: center;
+}
+
+.box2 {
+    background-color: #898121;
+}
+
+.box3 {
+    background-color: #f87a53;
+}
+
+/* This section is only for the 'How are you feeling today?' */
+
+.emotion-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.emotion-icons label {
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.hidden-checkbox:checked + i {
+    color: orange; /* Change the color when checked */
+}
+
+.emotion-icons i {
+    font-size: 30px;
+    color: #000;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+
+footer {
+    text-align: center;
+    padding: 4%;
+    width: 100%;
+    background-color: DarkSalmon;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+}
+
+
+    </style>
+
+
+<body>
+    <div class="menu">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <h1>It's TAF Time!</h1>
+    </div>
+    <div class="content">
+        <div class="box-comic">
+            <h3>How are you feeling today?</h3>
+            <div class="emotion-icons">
+                <label>
+                    <input type="checkbox" class="hidden-checkbox">
+                    <i class="fa-regular fa-face-smile"></i>
+                </label>
+                <label>
+                    <input type="checkbox" class="hidden-checkbox">
+                    <i class="fa-regular fa-face-frown"></i>
+                </label>
+                <label>
+                    <input type="checkbox" class="hidden-checkbox">
+                    <i class="fa-regular fa-face-meh"></i>
+                </label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box-comic-2 box3">
+                <h3>Taf's Says:</h3>
+                <p>"Come on Guys - don't be late"</p>
+            </div>
+            <div class="box-comic-1 box1">
+                <h3>Information</h3>
+                <p>"Let's add some information but I'm not sure what, it needs to be useful based on what card 1 is about"</p>#
+            </div>
+        </div>
+        <div class="container">
+            <div class="box-comic-1 box2">
+                <h3>Useful Links</h3>
+                <p>Some useful links to make your day!</p>
+                <p><a href="www.google.co.uk'">Add useful link here</a></p>
+                <p><a href="www.google.co.uk'">Add useful link here</a></p>
+            </div>
+            <div class="box-comic-2 box3">
+                <h3>Taf's Tips:</h3>
+                <p>"Let's add some information but I'm not sure what, it needs to be useful based on what card 1 is about"</p>
+            </div>
+
+        </div>
+        <a href="index.html" class="box-comic link-box">
+            <h3><i class="fa-solid fa-house"></i> Back Home</h3>
+        </a>
+    </div>
+
+
+    <footer>
+        <p>Author: Netcom: Team 2 : UX Research Course</p>
+        <p>Our Resources and Inspiration:  </p>
+        <p><a href="https://fontawesome.com/">FontAwesome</a></p>
+        <p><a href="https://plutotime.app/#what-is-pluto-time/">Pluto Time App</a></p>
+        <p><a href="https://www.headspace.com/">Headspace</a></p>
+    </footer>
+</body>
+</html>

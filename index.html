@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Taf Time!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+ 
+        .menu {
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            background-color: #E6C767; 
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .menu h1{
+            margin: 0;
+            color: #000000;
+        }
+        .menu .logo{
+            height: 100px;
+        }
+        .header-box h1 {
+            color: #000000; 
+        }
+
+      
+ 
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            width: 60%;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .container:hover .box:not(:hover){
+            opacity: 0.5;
+        }
+ 
+        .box {
+            width: 150px;
+            height: 210px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+            animation: wave 3s ease-in-out infinite alternate; /* Add animation: adjust speed */
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 15px rgba(0,0,0,2);
+        }
+ 
+        .box1 {
+            background-color: #4c4b16; 
+            animation-delay: 0.1s; /* Delay for wave effect */
+        }
+ 
+        .box2 {
+            background-color: #898121; 
+            animation-delay: 0.4s; /* Staggering delay */
+        }
+ 
+        .box3 {
+            background-color: #f87a53;
+            animation-delay: 0.5s; /* Staggering delay */
+        }
+ 
+        @keyframes wave {
+            0% {transform: translateY(0px); }
+            /*25% {transform: translateY(4px); }*/
+            50% {transform: translateY(4px); }
+            /*75% {transform: translateY(12px); }*/
+            100% {transform: translateY(16x); }
+        }
+ 
+        .palette-label {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            border-radius: 50%;
+            opacity: 0;
+            animation: fadeInOut 2s infinite;
+        }
+
+        @keyframes fadeInOut {
+            0% {opacity: 0;}
+            50% {opacity: 1;}
+            100% {opacity: 0;}}
+
+        footer {
+        text-align: center;
+        padding: 5%;
+        width: 100%;
+        background-color: DarkSalmon;
+        color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <h1>It's TAF Time!</h1>
+    </div>
+    <br>
+    </br>
+    <div class="circle"></div>
+    <h3>How are you feeling today?</h3>
+
+        <br>
+    </br>
+    <div class="container">
+        <a href="card1.html" class="box box1"> <p>#4C4B16 </p></a>
+        <a href="card2.html" class="box box2"> <p>#898121</p> </a>
+        <a href="card3.html" class="box box3"> <p>#F87A53</p> </a>
+    </div>
+    <div class="palette-label">
+            <h2>Palette: #4C4B16  | #898121  |  #F87A53</h2>
+    </div>
+
+    <footer>
+        <p>Author: Netcom: Team 2 : UX Research Course</p>
+        <p>Our Resources and Inspiration:  </p>
+        <p><a href="https://fontawesome.com/">FontAwesome</a></p>
+        <p><a href="https://plutotime.app/#what-is-pluto-time/">Pluto Time App</a></p>
+        <p><a href="https://www.headspace.com/">Headspace</a></p>
+    </footer>
+
+</body>
+
+
+</html>
