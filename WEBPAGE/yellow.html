@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            background-image: url(https://i.postimg.cc/Wb292SJF/Yellow.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .home-box {
+            display: flex;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: #c2c2c274;
+            border-radius: 5px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .home-box:hover{
+            transform-box: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            flex-wrap: wrap;
+            overflow: visible;
+        }
+
+        .box {
+            width: 1200px;
+            height: 250px;
+            margin: 25px;
+            border-radius: 15px;
+            animation: wave 2s ease-in-out infinite alternate;
+            display: flex;
+            display: table-column;
+            margin: 50 25%;
+            justify-content: center;
+            align-self: center;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .box1 {
+            background-color: #c2c2c274;
+            animation-delay: 0s;
+        }
+
+        .box1:hover {
+            transform-box: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .box2 {
+            background-color: #c2c2c274;           ;
+            animation-delay: 0.5s;
+        }
+
+        .box2:hover:hover {
+            transform-box: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes wave {
+            0% {transform: translateY(0);}
+            100% {transform: translateY(20px);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home-box"></div>
+    <div class="header-box"></div>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+</body>
+</html>
