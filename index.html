@@ -3,156 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's Taf Time!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(27, 27, 27, 0.974) 100%);
         }
- 
-        .menu {
-            display: flex;
-            justify-content:space-evenly;
-            align-items: center;
-            background-color: #E6C767; 
-            padding: 10px 20px;
-            border-radius: 10px;
+
+        .header-box{
+            justify-content: center;
+            align-self: center;
+            width: 500px;
+            height: 60px;
+            border-radius: 45px;
+            background-color: #b9bfbb57;
+            box-shadow: 0 1px 2px rgba(214, 213, 213, 0.469);
+            backdrop-filter: blur(5px);
             text-align: center;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            box-sizing: border-box;
+            line-height: 30px;
+            color: #ffffff;
+            font-family: "Montserrat";
         }
 
-        .menu h1{
-            margin: 0;
-            color: #000000;
-        }
-        .menu .logo{
-            height: 100px;
-        }
-        .header-box h1 {
-            color: #000000; 
-        }
-
-      
- 
         .container {
             display: flex;
             justify-content: space-around;
-            gap: 20px;
-            width: 60%;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
-            color: aliceblue;
-            text-align: center;
+            width: 80%;
+            flex-wrap: wrap;
+            overflow: visible;
         }
 
-        .container:hover .box:not(:hover){
-            opacity: 0.5;
-        }
- 
         .box {
-            width: 150px;
-            height: 210px;
+            width: 450px;
+            height: 250px;
             margin: 10px;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
-            animation: wave 3s ease-in-out infinite alternate; /* Add animation: adjust speed */
+            box-shadow: 0 1px 2px rgba(214, 213, 213, 0.469);
+            animation: wave 2s ease-in-out infinite alternate;
+            display: flex;
+            margin: 50 25%;
+            justify-content: center;
+            align-self: center;
+            z-index: 1;
+            backdrop-filter: blur(5px);
         }
 
-        .box:hover {
-            transform: scale(1.05);
-            box-shadow: 4px 4px 15px rgba(0,0,0,2);
-        }
- 
         .box1 {
-            background-color: #4c4b16; 
-            animation-delay: 0.1s; /* Delay for wave effect */
+            background-color: #b9bfbb57;
+            animation-delay: 0s;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Montserrat";
+            color: #ffffff;
         }
- 
+
         .box2 {
-            background-color: #898121; 
-            animation-delay: 0.4s; /* Staggering delay */
+            background-color: #b9bfbb57;
+            animation-delay: 0.5s;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Montserrat";
+            color: #ffffff;
         }
- 
+
         .box3 {
-            background-color: #f87a53;
-            animation-delay: 0.5s; /* Staggering delay */
+            background-color: #b9bfbb57;
+            animation-delay: 1s;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Montserrat";
+            color: #ffffff;
         }
- 
+
         @keyframes wave {
-            0% {transform: translateY(0px); }
-            /*25% {transform: translateY(4px); }*/
-            50% {transform: translateY(4px); }
-            /*75% {transform: translateY(12px); }*/
-            100% {transform: translateY(16x); }
-        }
- 
-        .palette-label {
-            margin-top: 20px;
-            font-size: 16px;
+            0% {transform: translateY(0);}
+            100% {transform: translateY(20px);}
         }
 
-        .circle {
-            width: 100px;
-            height: 100px;
-            border: 3px solid black;
+        .circle1 {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            opacity: 0;
-            animation: fadeInOut 2s infinite;
+            background: linear-gradient(45deg, rgb(255, 247, 22) 0%, rgba(190, 195, 189, 0.615) 100%);
+            position: absolute;
+            top: 200px;
+            left: 175px;
+            box-shadow: 0 0 10px 30px linear-gradient(45deg, rgb(255, 247, 22) 0%, rgba(190, 195, 189, 0.615) 100%);
         }
 
-        @keyframes fadeInOut {
-            0% {opacity: 0;}
-            50% {opacity: 1;}
-            100% {opacity: 0;}}
-
-        footer {
-        text-align: center;
-        padding: 5%;
-        width: 100%;
-        background-color: DarkSalmon;
-        color: white;
+        .circle2 {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: linear-gradient(120deg, rgb(255, 136, 9) 0%, rgba(190, 195, 189, 0.615) 100%);
+            position: absolute;
+            top: 400px;
+            left: 500px;
+            box-shadow: 5px 5px linear-gradient(120deg, rgb(255, 136, 9) 0%, rgba(190, 195, 189, 0.615) 100%)
         }
+
+        .circle3 {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: linear-gradient(230deg, rgba(136,240,102,1) 0%, rgba(216, 230, 213, 0.865) 100%);
+            position: absolute;
+            top: 50px;
+            left: 950px;
+            box-shadow: 0 0 10px 50px linear-gradient(230deg, rgba(136,240,102,1) 0%, rgba(216, 230, 213, 0.865) 100%)
+        }
+
     </style>
 </head>
-
 <body>
-    <div class="menu">
-        <img src="img/logo.png" alt="Logo" class="logo">
-        <h1>It's TAF Time!</h1>
+    <div class="header-box">
+        <h1>MOODBOOSTER</h1>
     </div>
-    <br>
-    </br>
-    <div class="circle"></div>
-    <h3>How are you feeling today?</h3>
-
-        <br>
-    </br>
     <div class="container">
-        <a href="card1.html" class="box box1"> <p>#4C4B16 </p></a>
-        <a href="card2.html" class="box box2"> <p>#898121</p> </a>
-        <a href="card3.html" class="box box3"> <p>#F87A53</p> </a>
-    </div>
-    <div class="palette-label">
-            <h2>Palette: #4C4B16  | #898121  |  #F87A53</h2>
-    </div>
+        
+        <a href="green.html" class="box box1"> <p>FEEL GOOD </p></a>
 
-    <footer>
-        <p>Author: Netcom: Team 2 : UX Research Course</p>
-        <p>Our Resources and Inspiration:  </p>
-        <p><a href="https://fontawesome.com/">FontAwesome</a></p>
-        <p><a href="https://plutotime.app/#what-is-pluto-time/">Pluto Time App</a></p>
-        <p><a href="https://www.headspace.com/">Headspace</a></p>
-    </footer>
+        <a href="yellow.html" class="box box2"> <p>FEEL GOODER </p></a>
 
+        <a href="orange.html" class="box box3"> <p>FEEL GOODEST </p></a>
+
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
 </body>
-
-
 </html>
