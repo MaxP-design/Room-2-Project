@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>It's Taf Time! > Card 1</title>
+    <link rel="stylesheet" href="sun.css">
     <style>
 
 
@@ -22,13 +23,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color:rgb(246, 246, 246);
 }
 
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E6C767;
+    background-color: #fadd61;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -98,7 +100,7 @@ body {
     gap: 20px;
     width: 60%;
     flex-wrap: wrap;
-    color: aliceblue;
+    color: black;
 }
 
 .box-comic-1:hover, .box-comic-2:hover {
@@ -108,16 +110,17 @@ body {
 }
 
 .box1 {
-    background-color: #4c4b16;
+    background-color: #fadd61;
     text-align: center;
 }
 
 .box2 {
-    background-color: #898121;
+    background-color: #fadd61;
+    text-align: justify;
 }
 
 .box3 {
-    background-color: #f87a53;
+    background-color: #fadd61;
 }
 
 /* This section is only for the 'How are you feeling today?' */
@@ -152,7 +155,7 @@ footer {
     text-align: center;
     padding: 4%;
     width: 100%;
-    background-color: DarkSalmon;
+    background-color: #fadd61;
     color: white;
     position: relative;
     bottom: 0;
@@ -160,14 +163,18 @@ footer {
     margin-top: auto;
 }
 
-
+.link-list {
+    text-align: left;
+}
     </style>
 
 
 <body>
+    <div class="sky">
+        <div class="sun"></div>
     <div class="menu">
-        <img src="img/logo.png" alt="Logo" class="logo">
-        <h1>It's TAF Time!</h1>
+        <img src="img/Sunflower.png" alt="Logo" class="logo">
+        <h1>MOODBOOSTER</h1>
     </div>
     <div class="content">
         <div class="box-comic">
@@ -188,25 +195,20 @@ footer {
             </div>
         </div>
         <div class="container">
-            <div class="box-comic-2 box3">
-                <h3>Taf's Says:</h3>
-                <p>"Come on Guys - don't be late"</p>
-            </div>
-            <div class="box-comic-1 box1">
-                <h3>Information</h3>
-                <p>"Let's add some information but I'm not sure what, it needs to be useful based on what card 1 is about"</p>#
-            </div>
         </div>
         <div class="container">
             <div class="box-comic-1 box2">
-                <h3>Useful Links</h3>
-                <p>Some useful links to make your day!</p>
-                <p><a href="www.google.co.uk'">Add useful link here</a></p>
-                <p><a href="www.google.co.uk'">Add useful link here</a></p>
+                <h3>Creativity boosts your mood by letting you express yourself and feel positive. Activities like art and music distract you from stress and give you a sense of achievement. Engaging in these creative pursuits helps you feel better overall.</h3>
             </div>
             <div class="box-comic-2 box3">
-                <h3>Taf's Tips:</h3>
-                <p>"Let's add some information but I'm not sure what, it needs to be useful based on what card 1 is about"</p>
+                <h3>Useful Links</h3>
+                <p>Some useful links to make your day!</p>
+                <ul class="link-list">
+                <li><a href="https://www.bandlab.com/">https://www.bandlab.com/</a></li>
+                <li><a href="https://www.coloringonline.com">https://www.coloringonline.com/</a></li>
+                <li><a href="http://weavesilk.com/">http://weavesilk.com/</a></li>
+                </ul>
+                
             </div>
 
         </div>
@@ -223,5 +225,6 @@ footer {
         <p><a href="https://plutotime.app/#what-is-pluto-time/">Pluto Time App</a></p>
         <p><a href="https://www.headspace.com/">Headspace</a></p>
     </footer>
+</div>
 </body>
 </html>
